@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts | SpiderNoir</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contacts</h1>
+        <nav>
+            <div class="nav-container">
+                <div class="logo-text">Dashboard</div>
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="scripting.html">Scripting</a>
+                    <a href="management.html">Management</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Get in Touch</h2>
+            <p>Interested in working together or have a project you'd like help with? Feel free to reach out.</p>
+
+            <ul>
+                <li><strong>Discord:</strong> <a href="https://discord.com/users/854755640827838495"
+                        target="_blank">@nebulousnico</a></li>
+                <li><strong>Email:</strong> <a href="mailto:thenebulousnico@gmail.com"
+                        target="_blank">thenebulousnico@gmail.com</a></li>
+                <li><strong>Roblox:</strong> <a href="https://www.roblox.com/users/3897299284/profile"
+                        target="_blank">@Arshx_x</a></li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById("navLinks");
+            nav.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>

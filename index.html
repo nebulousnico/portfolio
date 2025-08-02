@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nico's Portfolio | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Nico's Portfolio</h1>
+        <p> Scripter & Management</p>
+        <nav>
+            <div class="nav-container">
+                <div class="logo-text">Dashboard</div>
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="scripting.html">Scripting</a>
+                    <a href="management.html">Management</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <img src="images/profile.png" alt="Profile Picture" class="profile-img">
+            <h2>Hello, I'm Nico.</h2>
+            <p>
+                An amateur scripter looking for simple scripting tasks or small commissions, either solo or within a
+                team, to develop and improve my programming skills. I have a bit of experience (1 year) with scripting
+                and UI design and can work efficiently using Roblox Studio or VS Code. Besides from scripting, I bring
+                many years of experience in management, community moderation, and some graphic design, making me a
+                well-adapted contributor eager to grow in game development and programming. Feel free to look at my
+                experience or contacts on the other pages!
+            </p>
+        </section>
+    </main>
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById("navLinks");
+            nav.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>

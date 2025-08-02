@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Scripting Experience | Nico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Scripting Experience</h1>
+        <nav>
+            <div class="nav-container">
+                <div class="logo-text">Dashboard</div>
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="scripting.html">Scripting</a>
+                    <a href="management.html">Management</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>EchoWave Production</h2>
+            <ul>
+                <p>Intern Scripter (July 2025 – Present)</p>
+                <p>- Developed server-client communication using RemoteEvents for player actions such as cuffing and
+                    booking across the game.</p>
+
+                <p>- Implemented security checks and restrictions to ensure only authorized players or teams could
+                    perform arrests and bookings plus whitelisted teams (in terms of who can not be arrested).</p>
+
+                <p>- Created a proximity-based door (with a model provided by the other team members) opening system
+                    using ProximityPrompts so it opens when you click "E"</p>
+
+                <p>- Added GUI pop-ups for arrest and booking procedures.</p>
+
+                <p>- Worked on data logging features, including sending booking details to Discord via webhooks for
+                    external record-keeping.</p>
+
+                <p>- Got feedback and added it into scripts to prevent exploits and ensure reliable multiplayer
+                    performance.</p>
+
+                <p>- Designed and scripted a handcuff and booking system allowing players to arrest, handcuff, and book
+                    suspects with interactive UI interfaces.</p>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Silent House by Ankaris Studios</h2>
+            <ul>
+                <p> Scripter (May 2025 – July 2025)</p>
+                <p>- Scripted interactive NPC behaviors, such as creating a morph (Chef) that attacks players when they
+                    come near, including integrating attack animations to enhance player experience.</p>
+
+                <p>- Implemented custom animations triggered by in-game events, like hit reactions for NPC attacks.</p>
+
+                <p>- Collaborated with the team to create engaging gameplay mechanics through Lua scripting in Roblox
+                    Studio.</p>
+
+                <p>- Debugged and optimized scripts to ensure smooth and lag-free gameplay performance.</p>
+
+                <p>- Integrated proximity detection systems to trigger NPC actions based on player location.</p>
+
+                <p>- Created modular and reusable script components to speed up development across multiple projects.
+                </p>
+
+                <p>- Maintained and updated existing scripts based on feedback from other more experienced scripters and
+                    gameplay testing to improve game balance and user experience. </p>
+
+                <p>- Coordinated with other developers to integrate scripted features with UI elements and game logic.
+                </p>
+            </ul>
+        </section>
+    </main>
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById("navLinks");
+            nav.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>

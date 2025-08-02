@@ -1,0 +1,213 @@
+/* === GENERAL STYLES === */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0a0a0a;
+    /* deep black */
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #111;
+    padding: 1.5em;
+    text-align: center;
+    border-bottom: 2px solid #0f0;
+    /* neon green */
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #0f0;
+    /* neon green */
+    margin-bottom: 0.2em;
+    text-shadow: 0 0 10px #0f0;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #a259ff;
+    /* soft purple */
+    text-shadow: 0 0 5px #a259ff;
+}
+
+nav {
+    margin-top: 1em;
+}
+
+nav a {
+    color: #0f0;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #a259ff;
+    text-shadow: 0 0 6px #a259ff;
+}
+
+/* === MAIN SECTION === */
+main {
+    padding: 2em;
+    max-width: 900px;
+    margin: auto;
+}
+
+section {
+    background: #151515;
+    padding: 2em;
+    margin-bottom: 2em;
+    border-left: 5px solid #0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #0f0a;
+}
+
+h2 {
+    color: #a259ff;
+    text-shadow: 0 0 8px #a259ff;
+    border-bottom: 2px solid #a259ff;
+    padding-bottom: 0.2em;
+    margin-bottom: 1em;
+}
+
+ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* === PROFILE IMAGE === */
+.profile-img {
+    width: 160px;
+    border-radius: 50%;
+    border: 3px solid #0f0;
+    box-shadow: 0 0 12px #0f0;
+    margin: 1em auto;
+    display: block;
+}
+
+/* === CONTACT PAGE === */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    background: #1e1e1e;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid #3c018a;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+}
+
+a {
+    color: #0f0;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #a259ff;
+}
+
+/* === SCROLLBAR (optional) === */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0f0;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px 5px;
+        font-size: 1em;
+    }
+
+    main {
+        padding: 1em;
+    }
+
+    section {
+        padding: 1.2em;
+    }
+
+    .profile-img {
+        width: 120px;
+    }
+}
+
+/* === NAVBAR === */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: auto;
+    padding: 0 1em;
+}
+
+.logo-text {
+    color: #0f0;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 0 0 5px #0f0;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: #0f0;
+}
+
+/* Links on large screens */
+.nav-links a {
+    color: #0f0;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #a259ff;
+    text-shadow: 0 0 6px #a259ff;
+}
+
+/* === MOBILE MENU === */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #151515;
+        padding: 1em;
+        border-top: 2px solid #0f0;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
